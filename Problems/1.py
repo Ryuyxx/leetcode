@@ -10,14 +10,14 @@
 # target = 6
 # # Output: [0,1]
 
-nums = [2,5,5,11]
+nums = [2, 5, 5, 11]
 target = 10
 
 for v, i in enumerate(nums):
     for j in range(len(nums)):
-        if j == 0 or j == v : continue
+        if j == 0 or j == v: continue
         if i + nums[j] == target:
-            print ([v,j])
+            print([v, j])
             break
     else:
         continue

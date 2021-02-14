@@ -16,13 +16,14 @@ s = "){"
 # False
 
 if len(s) < 2: print("error")
-d = {'(':')', '{':'}', '[':']'}
+d = {'(': ')', '{': '}', '[': ']'}
 
 tmp = []
 for i in s:
     if i in d.keys():
         tmp.append(d[i])
-    elif len(tmp) == 0: print("error")
+    elif len(tmp) == 0:
+        print("error")
     else:
         if i == tmp[::-1][0]:
             tmp.pop(-1)

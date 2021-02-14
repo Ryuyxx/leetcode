@@ -6,6 +6,8 @@ needle = "bba"
 # Output: -1
 haystack = ""
 needle = "a"
+
+
 # Output: -1
 
 
@@ -17,7 +19,6 @@ class Solution:
 
 sol = Solution()
 sol.strStr(haystack, needle)
-
 
 # Runtime: 32 ms, faster than 73.62% of Python3 online submissions for Implement strStr().
 # Memory Usage: 14.4 MB, less than 49.90% of Python3 online submissions for Implement strStr().

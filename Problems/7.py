@@ -43,26 +43,25 @@ x = 1534236469
 #     return 0 if -2147483648 <= abs(int(lst)) >= (1<<31)-1 else int(lst)
 
 
-#amelioration
+# amelioration
 
 
 ## submit
 
-if 2**31 <= x or x <= -2**31-1 : return 0
+if 2 ** 31 <= x or x <= -2 ** 31 - 1: return 0
 if x >= 0:
-    ans = int(str(x) [::-1])
-    return 0 if 2**31 <= ans or ans <= -2**31-1 else ans
+    ans = int(str(x)[::-1])
+    return 0 if 2 ** 31 <= ans or ans <= -2 ** 31 - 1 else ans
 else:
-    ans = int("-"+str(x)[1:][::-1])
-    return 0 if 2**31 <= ans or ans <= -2**31-1 else ans
-
+    ans = int("-" + str(x)[1:][::-1])
+    return 0 if 2 ** 31 <= ans or ans <= -2 ** 31 - 1 else ans
 
 ## local test
 
-if 2**31 <= x or x <= -2**31-1 : print(0)
+if 2 ** 31 <= x or x <= -2 ** 31 - 1: print(0)
 if x >= 0:
-    ans = int(str(x) [::-1])
-    print(0) if 2**31 <= ans or ans <= -2**31-1 else print(ans)
+    ans = int(str(x)[::-1])
+    print(0) if 2 ** 31 <= ans or ans <= -2 ** 31 - 1 else print(ans)
 else:
-    ans = int("-"+str(x)[1:][::-1])
-    print(0) if 2**31 <= ans or ans <= -2**31-1 else print(ans)
+    ans = int("-" + str(x)[1:][::-1])
+    print(0) if 2 ** 31 <= ans or ans <= -2 ** 31 - 1 else print(ans)

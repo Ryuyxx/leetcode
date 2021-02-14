@@ -2,6 +2,8 @@ n = 1
 # Output: "1"
 
 n = 4
+
+
 # Output: "1211"
 # Explanation:
 # countAndSay(1) = "1"
