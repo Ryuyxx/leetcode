@@ -1,22 +1,35 @@
-s = "Hello World"
-# Output: 5
-s = " "
+"""
+2021/2/13
 
+[Solved]
+Runtime: 24 ms, faster than 95.53% of Python3 online submissions for Length of Last Word.
+Memory Usage: 14.4 MB, less than 39.49% of Python3 online submissions for Length of Last Word.
 
-# Output: 0
+Better 1 line sol
+return len(s.strip().split(' ')[-1])
+"""
+
+import unittest
 
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         import re
-        if s.strip() == '':
-            return 0
-        else:
-            return len(re.findall(r'\S+', s)[-1])
+        if s.strip() == '': return 0
+        else: return len(re.findall(r'\S+', s)[-1])
 
 
-sol = Solution()
-sol.lengthOfLastWord(s)
+class Test(unittest.TestCase):
+    def test1(self):
+        i = "Hello World"
+        e = 5
+        self.assertEqual(e, Solution().lengthOfLastWord(i))
+    def test2(self):
+        i = " "
+        e = 0
+        self.assertEqual(e, Solution().lengthOfLastWord(i))
 
-# fastest sol
-# return len(s.strip().split(' ')[-1])
+
+
+if __name__ == "__main__":
+    unittest.main()
