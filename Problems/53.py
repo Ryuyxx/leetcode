@@ -1,15 +1,11 @@
-nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-# Output: 6
-nums = [1]
-# Output: 1
-# nums = [0]
-# Output: 0
-# nums = [-1]
-# Output: -1
-nums = [-100000]
+"""
+2021/00/00
 
+[Solved][Attempted]
 
-# Output: -100000
+"""
+
+import unittest
 
 
 class Solution:
@@ -21,5 +17,28 @@ class Solution:
         return g
 
 
-sol = Solution()
-sol.maxSubArray(nums)
+class Test(unittest.TestCase):
+    def test1(self):
+        i = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+        e = 6
+        self.assertEqual(e, Solution().maxSubArray(i))
+    def test2(self):
+        i = [1]
+        e = 1
+        self.assertEqual(e, Solution().maxSubArray(i))
+    def test3(self):
+        i = [0]
+        e = 0
+        self.assertEqual(e, Solution().maxSubArray(i))
+    def test4(self):
+        i = [-1]
+        e = -1
+        self.assertEqual(e, Solution().maxSubArray(i))
+    def test4(self):
+        i = [-100000]
+        e = -100000
+        self.assertEqual(e, Solution().maxSubArray(i))
+
+
+if __name__ == "__main__":
+    unittest.main()
