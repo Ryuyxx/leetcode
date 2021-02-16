@@ -1,6 +1,7 @@
 """
 2021/2/13
 
+58. Length of Last Word
 [Solved]
 Runtime: 24 ms, faster than 95.53% of Python3 online submissions for Length of Last Word.
 Memory Usage: 14.4 MB, less than 39.49% of Python3 online submissions for Length of Last Word.

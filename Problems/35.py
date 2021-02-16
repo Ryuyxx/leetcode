@@ -1,20 +1,13 @@
-nums = [1, 3, 5, 6]
-target = 5
-# Output: 2
-nums = [1, 3, 5, 6]
-target = 2
-# Output: 1
-nums = [1, 3, 5, 6]
-target = 7
-# Output: 4
-nums = [1, 3, 5, 6]
-target = 0
-# Output: 0
-nums = [1]
-target = 0
+"""
+2021/02/11
 
+35. Search Insert Position
+[Solved]
+Runtime: 48 ms, faster than 76.74% of Python3 online submissions for Search Insert Position.
+Memory Usage: 15.1 MB, less than 56.25% of Python3 online submissions for Search Insert Position.
+"""
 
-# Output: 0
+import unittest
 
 
 class Solution:
@@ -25,8 +18,34 @@ class Solution:
                 return v
 
 
-sol = Solution()
-sol.searchInsert(nums, target)
 
-# Runtime: 48 ms, faster than 76.74% of Python3 online submissions for Search Insert Position.
-# Memory Usage: 15.1 MB, less than 56.25% of Python3 online submissions for Search Insert Position.
+class Test(unittest.TestCase):
+    def test1(self):
+        i = [1, 3, 5, 6]
+        ii= 5
+        e = 2
+        self.assertEqual(e, Solution().searchInsert(i, ii))
+    def test2(self):
+        i = [1, 3, 5, 6]
+        ii= 2
+        e = 1
+        self.assertEqual(e, Solution().searchInsert(i, ii))
+    def test3(self):
+        i = [1, 3, 5, 6]
+        ii= 7
+        e = 4
+        self.assertEqual(e, Solution().searchInsert(i, ii))
+    def test4(self):
+        i = [1, 3, 5, 6]
+        ii= 0
+        e = 0
+        self.assertEqual(e, Solution().searchInsert(i, ii))
+    def test5(self):
+        i = [1]
+        ii= 0
+        e = 0
+        self.assertEqual(e, Solution().searchInsert(i, ii))
+
+
+if __name__ == "__main__":
+    unittest.main()

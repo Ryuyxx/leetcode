@@ -1,6 +1,7 @@
 """
 2021/2/14
 
+66. Plus One
 [Solved]
 Runtime: 20 ms, faster than 99.71% of Python3 online submissions for Plus One.
 Memory Usage: 14.2 MB, less than 49.92% of Python3 online submissions for Plus One.

@@ -1,8 +1,10 @@
 """
-2021/00/00
+2021/02/12
 
-[Solved][Attempted]
-
+53. Maximum Subarray
+[Solved]
+Runtime: 64 ms, faster than 78.58% of Python3 online submissions for Maximum Subarray.
+Memory Usage: 14.9 MB, less than 82.12% of Python3 online submissions for Maximum Subarray.
 """
 
 import unittest
