@@ -2,7 +2,7 @@
 2021/02/22
 
 88. Merge Sorted Array
-[Solved][Attempted]
+[Solved]
 Runtime: 32 ms, faster than 91.82% of Python3 online submissions for Merge Sorted Array.
 Memory Usage: 14.2 MB, less than 88.26% of Python3 online submissions for Merge Sorted Array.
 """
